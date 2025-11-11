@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import {financialData} from "./data/mockData.ts";
 import KPICard from "./components/KPICard.tsx";
+import RevenueChart from "./components/RevenueChart.tsx";
 
 function App() {
     const { kpis } = financialData;
@@ -36,6 +37,9 @@ function App() {
                       value={`${kpis.growthRate}%`}
                       change={2.1}
                   />
+              </div>
+              <div className="mb-8">
+                  <RevenueChart />
               </div>
           </main>
       </div>
