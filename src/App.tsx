@@ -2,6 +2,7 @@ import { useState } from 'react';
 import {financialData} from "./data/mockData.ts";
 import KPICard from "./components/KPICard.tsx";
 import RevenueChart from "./components/RevenueChart.tsx";
+import ExpenseChart from "./components/ExpenseChart.tsx";
 
 function App() {
     const { kpis } = financialData;
@@ -40,6 +41,9 @@ function App() {
               </div>
               <div className="mb-8">
                   <RevenueChart />
+              </div>
+              <div className="mb-8">
+                  <ExpenseChart />
               </div>
           </main>
       </div>
